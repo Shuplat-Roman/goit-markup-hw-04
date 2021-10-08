@@ -74,15 +74,29 @@ color: var(--main-color);
 }
 
 .contacts .link{
-  margin-left: 50px;
   color: var(--color-text);
 }
+
+
 
 .link:hover,
 .link:focus{
   color: #2196F3;
 }
 
+.header-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: #2196F3;
+}
 
 
 .hero{
@@ -337,9 +351,17 @@ margin-bottom: 16px;
  color: var(--secondary-color);
 }
 
-.logo{
+.footer-logo{
     margin-bottom: 20px;
-    display: block;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    margin-right: 93px;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #2196F3
 }
 
 .address{
